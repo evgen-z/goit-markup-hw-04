@@ -122,12 +122,25 @@ a:focus {
   gap: 40px;
 }
 
+.current::after {
+  content: "";
+  width: auto;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404BBF;
+  display: block;
+}
+
 .menu-link {
   font-weight: 500;
   color: #2e2f42;
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
+}
+
+.menu-link:active {
+  color: #404bbf;
 }
 
 .page-contacts {
